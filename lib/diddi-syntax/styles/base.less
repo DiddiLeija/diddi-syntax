@@ -1,7 +1,7 @@
 @import "syntax-variables";
 
 atom-text-editor {
-  background-color: hsl(180, 24%, 12%);
+  background-color: @black;
   color: @syntax-text-color;
 
   .wrap-guide {
@@ -56,6 +56,7 @@ atom-text-editor {
 
 .syntax--comment {
   color: @light-gray;
+  font-style: italic;
 }
 
 .syntax--keyword {
@@ -155,12 +156,12 @@ atom-text-editor {
     }
 
     &.syntax--bold {
-      color: @light-orange;
+      color: @light-green;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @light-green;
       font-style: italic;
     }
   }
